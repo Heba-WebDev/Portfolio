@@ -1,0 +1,275 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); /*Fredoka One*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap'); /*Work Sans*/
+
+:root {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Work Sans";
+    overflow-x: hidden;
+    letter-spacing: 0.1em;
+    width: 100vw;
+    scroll-behavior: smooth;
+}
+
+
+.hero {
+    background-color: #02111B;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header > img {
+    width: 60%;
+    
+}
+
+.title {
+    
+    
+    color: #fcfcfc;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    
+    padding: 2rem 2rem;
+    
+}
+
+
+.title h1 {
+    font-weight: 800;
+    margin: 0;
+    font-size: 2.2rem;
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+   
+}
+
+@media (max-width:400px) {
+
+    .title h1 {
+        font-weight: 600;
+        font-size: 1.8rem;
+    }
+}
+
+.title h3 {
+    font-size: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    font-weight: 200;
+}
+
+ .title > a {
+    width: 80px;
+    height: auto;
+    background-color: #30292F;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.6rem 0.6rem;
+    border-radius: 0.5rem;
+    color: #fefefe;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    align-self: center;
+    justify-self: center;
+    
+} 
+
+ .main {
+    width: 100vw;
+}
+.about {
+    width: 100vw;
+    height: 100%;
+    padding: 3rem 0;
+    background-color: #eee;
+    color: #04030F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.about > h2 {
+    font-size: 1.4rem;
+    padding-bottom: .8rem;
+}
+
+.about > p
+{
+    max-width: 70%;
+    line-height: 1.4;
+    
+}
+
+.about_contacts {
+    height: 100%;
+    padding: 2rem 2rem;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_contacts > a {
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+.about_img {
+    width: 50%;
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+
+.projects {
+ display: grid;
+ width: 100vw;
+ height: auto;
+ justify-content: center;
+ align-items: center;
+ background-color: #5D737E;
+ grid-gap: 3vh;
+ padding: 1rem 0;
+ 
+}
+
+@media (max-width: 950px) {
+    .projects {
+        grid-gap: 0.3vh;
+    }
+}
+.projects > h2 {
+    color: white;
+    text-align: center;
+}
+
+
+
+.projects_1_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    max-width: 100%;
+}
+
+.projects_1_2  h4 {
+    font-size: 1.2rem;
+}
+
+.projects_1_2  a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #3F4045;
+    
+}
+
+
+
+.projects_3_4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 700px;
+    max-width: 100%;
+}
+
+.project {
+    display: grid;
+    justify-content: center;
+}
+
+@media (max-width: 950px) {
+
+    .projects_1_2, .projects_3_4 {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        
+    }
+}
+.project {
+    background-color: #eee;
+    padding: 0.5rem;
+    width: 300px;
+    height: 340px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 2vw;
+    
+}
+
+.projects_3_4 a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #3F4045;
+    
+}
+
+
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 3rem 5rem;
+    background-color: #3F4045;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: #fcfcfc;
+    text-align: center;
+}
+
+form {
+
+    display: grid;
+   width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+@media (min-width: 750px) {
+    form {
+        transform: scale(1);
+    }
+}
+
